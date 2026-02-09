@@ -10,6 +10,7 @@ import { DataEmployees } from './Data.jsx';
 
 export default function DepartmentEmp({header}) {
  
+  let [width,setWidth]=React.useState(window.innerWidth);
   let[desktopOs,setdesktopOs]=React.useState([
     {
     label: 'IT',
@@ -100,7 +101,7 @@ return <>
     <Box sx={{ width: '100%' ,fontSize:'12px',fontWeight:'bold'}}>
       <PieChart
         height={300}
-        width={300}
+        width={`${width<992?250:300}`}
         series={[
           {
             data: mobileAndDesktopOS.slice(0, itemNb),
