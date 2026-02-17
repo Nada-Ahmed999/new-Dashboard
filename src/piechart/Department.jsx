@@ -15,54 +15,41 @@ export default function DepartmentEmp({header}) {
     {
     label: 'IT',
     value: 0,
-    color:'#8bc34a',  // لون
+    color:'#0f6668',  // لون
     },
     {
     label: 'Marketing',
     value: 0,
-    color:'#5d7f36',  // لون
+    color:'#199497',  // لون
     },
     {
     label: 'Customer Support',
     value: 0,
-    color:'#bbed84',  // لون
+    color:'#3bbabd',  // لون
     },
     {
     label: 'Network',
     value: 0,
-    color:'#314915',  // لون
+    color:'#4ae2e5',  // لون
     },
     {
     label: 'Sales',
     value: 0,
-    color:'#b5ea78',  // لون
+    color:'#6fd2d4',  // لون
     },
     {
     label: 'HR',
     value: 0,
-    color:'#4caf50',  // لون
+    color:'#79bcbd',  // لون
     }])
+  
   //1- 
   
     const [radius, setRadius] = React.useState(50);
     const [itemNb, setItemNb] = React.useState(desktopOs.length); //عدد الاقسام
     const [skipAnimation, setSkipAnimation] = React.useState(false);
 
-    //2-
-  //    const handleItemNbChange = (event, newValue) => {
-  //   if (typeof newValue !== 'number') {
-  //     return;
-  //   }
-  //   setItemNb(newValue);
-  // };
-  // const handleRadius = (event, newValue) => {
-  //   if (typeof newValue !== 'number') {
-  //     return;
-  //   }
-  //   setRadius(newValue);
-  // };
-
-  // status
+   
 //  format from mui
 
   //1-
@@ -97,7 +84,7 @@ return <>
 <DataEmployees  mydata={setdesktopOs}/>
 
   <div className='mt-5'>
-    <h3 className='pb-5 text-secondary  text-start mb-5 ps-5'>{header}</h3>  
+    <h3 className='pb-5   text-start mb-5 ps-5'>{header}</h3>  
     <Box sx={{ width: '100%' ,fontSize:'12px',fontWeight:'bold'}}>
       <PieChart
         height={300}

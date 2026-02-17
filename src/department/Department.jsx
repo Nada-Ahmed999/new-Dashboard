@@ -1,9 +1,10 @@
 import { PieChart } from '@mui/x-charts/PieChart';
 import { useContext, useEffect, useState } from 'react';
 import { content } from '../context/DataApi';
+import { stateAr } from '../language/Ar';
+import { stateEn } from '../language/En';
 
-
-export default function Department() {
+export default function Department({open}) {
   let {projects,project,setProject,tasks,setValueTask,setColor}=useContext(content)
  let x={
   'IT':0,
@@ -31,13 +32,15 @@ export default function Department() {
   
 
   const data = [
-  { label: 'IT', value: value['IT'] ,color:'#8bc34a'},
-  { label: 'Marketing', value: value['Marketing'] ,color:'blue'},
-  { label: 'Customer Support', value: value['Customer Support'] ,color:'pink'},
-  { label: 'Network', value: value['Network'] ,color:'purple'},
-  { label: 'Sales', value: value['Sales'] ,color:'#0dcaf0'},
-  { label: 'HR', value: value['HR'] ,color:'green'},
+  { label: 'IT', value: value['IT'] ,color:'#0093ff'},
+  { label: 'Marketing', value: value['Marketing'] ,color:'#2d82c0'},
+  { label: 'Customer Support', value: value['Customer Support'] ,color:'#0d5c97'},
+  { label: 'Network', value: value['Network'] ,color:'#063f6a'},
+  { label: 'Sales', value: value['Sales'] ,color:'#032036'},
+  { label: 'HR', value: value['HR'] ,color:'#99c2e2'},
 ];
+
+
 
  
  
@@ -71,7 +74,7 @@ export default function Department() {
 
   return <>
   <div className='m-auto'>
-   <h3 className='text-secondary mb-5'>Projects by Department</h3>
+   <h3 className='fw-bold mb-5'>{open ? stateAr.projectDepartment : stateEn.projectDepartment}</h3>
 
 <div className='' >
     <PieChart
@@ -93,6 +96,7 @@ export default function Department() {
         })
         
       }}
+      style={{cursor:'pointer'}}
       />
 
 </div>

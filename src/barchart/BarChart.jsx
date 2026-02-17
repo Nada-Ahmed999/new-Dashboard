@@ -5,6 +5,9 @@
 import { valueFormatter } from './Dataset.jsx';
 import { useContext, useEffect, useState } from 'react';
 import {content} from '../context/DataApi.jsx'
+import { stateAr } from '../language/Ar.jsx';
+import { stateEn } from '../language/En.jsx';
+
 
 const chartSetting = {
   xAxis: [{ label: 'Number of tasks per month'}],
@@ -14,7 +17,7 @@ const chartSetting = {
 
 let dataset ;
 
-export default function BarCharts() {
+export default function BarCharts({open}) {
   //project from click department
  let {project,tasks,color}=useContext(content);
  let [datatask,setDataTask]=useState(null)
@@ -62,7 +65,7 @@ export default function BarCharts() {
 
   return <>
   <div className={`mt-4 ${width<992?'w-100':'w-50'}`}   >
-  <h5 className='ms-4 mt-5 text-secondary'>Tasks by project in the department</h5>
+  <h5 className='ms-4 mt-5 fw-bold'>{open ? stateAr.taskByProject : stateEn.taskByProject}</h5>
     <BarChart
       dataset={datatask||[]}
       yAxis={[{ scaleType: 'band', dataKey: 'month' }]}

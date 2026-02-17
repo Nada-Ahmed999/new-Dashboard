@@ -19,32 +19,32 @@ import { content } from "../context/DataApi";
     {
     label: 'IT',
     value: 0,
-    color:'#8bc34a',  // لون
+    color:'#0f6668',  // لون
     },
     {
     label: 'Marketing',
     value: 0,
-    color:'#5d7f36',  // لون
+    color:'#199497',  // لون
     },
     {
     label: 'Customer Support',
     value: 0,
-    color:'#bbed84',  // لون
+    color:'#3bbabd',  // لون
     },
     {
     label: 'Network',
     value: 0,
-    color:'#314915',  // لون
+    color:'#4ae2e5',  // لون
     },
     {
     label: 'Sales',
     value: 0,
-    color:'#b5ea78',  // لون
+    color:'#6fd2d4',  // لون
     },
     {
     label: 'HR',
     value: 0,
-    color:'#4caf50',  // لون
+    color:'#79bcbd',  // لون
     },
   ]
 

@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useContext, useEffect } from "react";
-
+import React, { useContext, useEffect, useState } from "react";
 import {
   faFileCircleCheck,
   faHourglassEnd,
@@ -10,12 +9,17 @@ import {
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
 import { content } from "../context/DataApi";
+import { stateEn } from "../language/En";
+import { stateAr } from "../language/Ar";
 
 
-export default function Kpi() {
+export default function Kpi({open}) {
   let { employees, client, projects, tasks } = useContext(content);
+  let[state,setState]=useState(stateEn)
   
-
+ useEffect(()=>{
+  open ? setState(stateAr) : setState(stateEn);
+  },[open])
   function overdueTasks() {
     let last = tasks.filter((task) => task["status"] !== "Done");
     return last.length;
@@ -61,22 +65,25 @@ export default function Kpi() {
     faHourglassEnd,
   ];
 
+  
+
   return (
     <>
-      <div className="d-lg-flex justify-content-around bg-light container-lg  ">
-        {partment.map((part, index) => {
+      <div className="d-lg-flex justify-content-around  container-lg  ">
+        {state.partment.map((part, index) => {
+         
           return (
             <div
               key={index}
-              className=" p-4  m-1  fw-bold w-100 text-center"
+              className=" m-1 py-2  fw-bold w-100 text-center rounded-5"
               style={{
-                backgroundColor: `${color[index]}`,
+                backgroundColor: `#0f6668`,
                 color: "#ffffff",
                 fontWeight: "bold",
               }}
             >
               {part}
-              <h1 className="text-center text-light  py-3">{data[part]}</h1>
+              <h1 className="text-center text-light  py-2 my-4" style={{backgroundColor:'#95919161'}}>{data[stateEn.partment[index]]}</h1>
 
               <FontAwesomeIcon
                 icon={icon[index]}

@@ -8,6 +8,8 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { useDrawingArea } from '@mui/x-charts/hooks';
 import { styled } from '@mui/material/styles';
 import { content } from '../context/DataApi';
+import { stateAr } from '../language/Ar';
+import { stateEn } from '../language/En';
 
 
 const StyledText = styled('text')(({ theme }) => ({
@@ -30,7 +32,7 @@ function PieCenterLabel({ children }) {
 }
 
 
-export default function TasksPieChart() {
+export default function TasksPieChart({open}) {
   const [task, setTask] = React.useState([]);
   const [view, setView] = React.useState('status');
   let {tasks}= React.useContext(content)
@@ -46,9 +48,9 @@ export default function TasksPieChart() {
   
   //  Colors  for status
   const statusColors = {
-    Todo: '#c8c8c8',
-    'In Progress': 'gray',
-    Done: '#acaaaa',
+    Todo: '#92dfee',
+    'In Progress': '#96c6dc',
+    Done: '#bce2d5',
   };
 
   const departmentColors = {
@@ -102,9 +104,9 @@ export default function TasksPieChart() {
 
   return (
     <>
-    <Box sx={{ width: '100%', textAlign: 'center' }}>
-      <Typography variant="h5" gutterBottom className='text-secondary fw-bold mt-5 '>
-        project by status and by department
+    <Box sx={{ width: '100%', textAlign: 'center' }} >
+      <Typography variant="h5" gutterBottom className=' fw-bold mt-5 '>
+        {open ? stateAr.projectStatus : stateEn.projectStatus}
       </Typography>
 
       <ToggleButtonGroup
@@ -114,12 +116,13 @@ export default function TasksPieChart() {
         onChange={handleViewChange}
         // sx={{ mb: 2 }}
       >
-        <ToggleButton value="status">By Status</ToggleButton>
-        <ToggleButton value="department">By Department</ToggleButton>
+        <ToggleButton value="status" className='fs-6 fw-bold'>{open ? stateAr.byStatus : stateEn.byStatus}</ToggleButton>
+        <ToggleButton value="department" className='fs-6 fw-bold'>{open ? stateAr.byDepartment : stateEn.byDepartment}</ToggleButton>
       </ToggleButtonGroup>
 
       <Box sx={{ display: 'flex', justifyContent: 'center', height: 420 ,marginTop:0,paddingTop:0}}>
         <PieChart
+        style={{cursor:'pointer'}}
           series={[
             {
               // innerRadius: 60,
@@ -145,7 +148,7 @@ export default function TasksPieChart() {
           }}
           hideLegend
         >
-          <PieCenterLabel className={'text-danger'}>
+          <PieCenterLabel >
             {view === 'status' ? 'Tasks' : 'Departments'}
           </PieCenterLabel>
         </PieChart>
