@@ -1,0 +1,550 @@
+{
+"employees": [
+  {
+    "id": 1,
+    "name": "Ahmed Hassan",
+    "department": "IT",
+    "position": "Frontend Developer",
+    "status": "Active",
+    "joinDate": "2022-03-15"
+  },
+ 
+  {
+    "id": 2,
+    "name": "Mona Ali",
+    "department": "HR",
+    "position": "HR Specialist",
+    "status": "Active",
+    "joinDate": "2021-07-01"
+  },
+  {
+    "id": 3,
+    "name": "Omar Khaled",
+    "department": "Network",
+    "position": "Network Engineer",
+    "status": "Active",
+    "joinDate": "2020-11-20"
+  },
+  {
+    "id": 4,
+    "name": "Sara Mahmoud",
+    "department": "Customer Support",
+    "position": "Support Agent",
+    "status": "Active",
+    "joinDate": "2023-02-10"
+  },
+  {
+    "id": 5,
+    "name": "Youssef Adel",
+    "department": "Sales",
+    "position": "Sales Executive",
+    "status": "Active",
+    "joinDate": "2022-08-05"
+  },
+  {
+    "id": 5,
+    "name": "Youssef Adel",
+    "department": "Sales",
+    "position": "Sales Executive",
+    "status": "Active",
+    "joinDate": "2022-08-05"
+  },
+  {
+    "id": 6,
+    "name": "Nour Ibrahim",
+    "department": "Marketing",
+    "position": "Digital Marketing Specialist",
+    "status": "Active",
+    "joinDate": "2021-04-18"
+  },
+  {
+    "id": 6,
+    "name": "Nour Ibrahim",
+    "department": "Marketing",
+    "position": "Digital Marketing Specialist",
+    "status": "Active",
+    "joinDate": "2021-04-18"
+  },
+  {
+    "id": 7,
+    "name": "Hany Mostafa",
+    "department": "IT",
+    "position": "Backend Developer",
+    "status": "Active",
+    "joinDate": "2019-09-12"
+  },
+  {
+    "id": 8,
+    "name": "Reem Fathy",
+    "department": "HR",
+    "position": "Recruitment Officer",
+    "status": "Active",
+    "joinDate": "2023-06-01"
+  },
+  {
+    "id": 9,
+    "name": "Khaled Samir",
+    "department": "Network",
+    "position": "Network Technician",
+    "status": "Inactive",
+    "joinDate": "2018-01-25"
+  },
+  {
+    "id": 10,
+    "name": "Aya Nabil",
+    "department": "Customer Support",
+    "position": "Customer Success Specialist",
+    "status": "Active",
+    "joinDate": "2022-12-03"
+  },
+  {
+    "id": 10,
+    "name": "Aya Nabil",
+    "department": "Customer Support",
+    "position": "Customer Success Specialist",
+    "status": "Active",
+    "joinDate": "2022-12-03"
+  }
+],
+"clients": [
+  {
+    "id": 1,
+    "name": "Nile Telecom",
+    "industry": "Telecommunications",
+    "status": "Active",
+    "startDate": "2020-01-10"
+  },
+  {
+    "id": 2,
+    "name": "Smart Solutions",
+    "industry": "IT Services",
+    "status": "Active",
+    "startDate": "2021-05-22"
+  },
+  {
+    "id": 3,
+    "name": "Cairo Logistics",
+    "industry": "Logistics",
+    "status": "Active",
+    "startDate": "2019-11-03"
+  },
+  {
+    "id": 4,
+    "name": "Green Energy Egypt",
+    "industry": "Energy",
+    "status": "Active",
+    "startDate": "2022-02-14"
+  },
+  {
+    "id": 5,
+    "name": "Future Finance",
+    "industry": "Financial Services",
+    "status": "Inactive",
+    "startDate": "2018-07-30"
+  },
+  {
+    "id": 6,
+    "name": "Health Plus",
+    "industry": "Healthcare",
+    "status": "Active",
+    "startDate": "2021-09-18"
+  },
+  {
+    "id": 7,
+    "name": "EduTech Academy",
+    "industry": "Education",
+    "status": "Active",
+    "startDate": "2023-01-05"
+  },
+  {
+    "id": 8,
+    "name": "Skyline Properties",
+    "industry": "Real Estate",
+    "status": "Active",
+    "startDate": "2019-04-12"
+  },
+  {
+    "id": 9,
+    "name": "Delta Manufacturing",
+    "industry": "Manufacturing",
+    "status": "Active",
+    "startDate": "2020-10-27"
+  },
+  {
+    "id": 10,
+    "name": "Urban Retail",
+    "industry": "Retail",
+    "status": "Active",
+    "startDate": "2022-06-08"
+  },
+  {
+    "id": 11,
+    "name": "Blue Ocean Travel",
+    "industry": "Travel & Tourism",
+    "status": "Inactive",
+    "startDate": "2017-12-19"
+  },
+  {
+    "id": 12,
+    "name": "Agro Farm Co",
+    "industry": "Agriculture",
+    "status": "Active",
+    "startDate": "2021-03-11"
+  },
+  {
+    "id": 13,
+    "name": "Media Vision",
+    "industry": "Media & Advertising",
+    "status": "Active",
+    "startDate": "2022-09-25"
+  },
+  {
+    "id": 14,
+    "name": "Secure Systems",
+    "industry": "Cybersecurity",
+    "status": "Active",
+    "startDate": "2020-08-02"
+  },
+  {
+    "id": 15,
+    "name": "Cloudify Tech",
+    "industry": "Cloud Computing",
+    "status": "Active",
+    "startDate": "2023-04-16"
+  }
+],
+"projects": [
+  {
+    "id": 101,
+    "name": "Network Optimization Phase 2",
+    "department": "Network",
+    "status": "Active",
+    "startDate": "2024-01-10",
+    "endDate": "2024-06-30"
+  },
+  {
+    "id": 102,
+    "name": "5G Coverage Expansion",
+    "department": "Network",
+    "status": "Active",
+    "startDate": "2024-02-05",
+    "endDate": "2024-09-30"
+  },
+  {
+    "id": 103,
+    "name": "Customer Mobile App Revamp",
+    "department": "IT",
+    "status": "Active",
+    "startDate": "2024-01-20",
+    "endDate": "2024-07-15"
+  },
+  {
+    "id": 104,
+    "name": "Internal HR System Upgrade",
+    "department": "HR",
+    "status": "Active",
+    "startDate": "2024-03-01",
+    "endDate": "2024-08-31"
+  },
+  {
+    "id": 105,
+    "name": "CRM Integration Project",
+    "department": "IT",
+    "status": "Active",
+    "startDate": "2024-02-18",
+    "endDate": "2024-10-20"
+  },
+  {
+    "id": 106,
+    "name": "Customer Support Chatbot",
+    "department": "Customer Support",
+    "status": "Active",
+    "startDate": "2024-01-25",
+    "endDate": "2024-05-30"
+  },
+  {
+    "id": 107,
+    "name": "Sales Performance Dashboard",
+    "department": "Sales",
+    "status": "Active",
+    "startDate": "2024-03-10",
+    "endDate": "2024-07-31"
+  },
+  {
+    "id": 108,
+    "name": "Marketing Campaign Automation",
+    "department": "Marketing",
+    "status": "Active",
+    "startDate": "2024-02-12",
+    "endDate": "2024-06-15"
+  },
+  {
+    "id": 109,
+    "name": "Data Center Security Upgrade",
+    "department": "Network",
+    "status": "Active",
+    "startDate": "2024-01-05",
+    "endDate": "2024-11-30"
+  },
+  {
+    "id": 110,
+    "name": "Employee Training Platform",
+    "department": "HR",
+    "status": "Active",
+    "startDate": "2024-04-01",
+    "endDate": "2024-09-30"
+  },
+  {
+    "id": 111,
+    "name": "Customer Feedback Analysis Tool",
+    "department": "IT",
+    "status": "Active",
+    "startDate": "2024-02-28",
+    "endDate": "2024-06-30"
+  },
+  {
+    "id": 112,
+    "name": "Network Monitoring System",
+    "department": "Network",
+    "status": "Active",
+    "startDate": "2024-03-15",
+    "endDate": "2024-12-31"
+  },
+  {
+    "id": 113,
+    "name": "Sales CRM Optimization",
+    "department": "Sales",
+    "status": "Active",
+    "startDate": "2024-01-18",
+    "endDate": "2024-05-31"
+  },
+  {
+    "id": 114,
+    "name": "Brand Awareness Campaign",
+    "department": "Marketing",
+    "status": "Active",
+    "startDate": "2024-04-10",
+    "endDate": "2024-08-15"
+  },
+  {
+    "id": 115,
+    "name": "Customer Service Quality Improvement",
+    "department": "Customer Support",
+    "status": "Active",
+    "startDate": "2024-03-05",
+    "endDate": "2024-09-10"
+  }
+],
+"tasks": [
+  {
+    "id": 1001,
+    "title": "Fix network latency issue",
+    "projectId": 101,
+    "department": "Network",
+    "role": "Network Engineer",
+    "status": "In Progress",
+    "priority": "High",
+    "dueDate": "2024-02-20"
+  },
+  {
+    "id": 1002,
+    "title": "Upgrade core router firmware",
+    "projectId": 102,
+    "department": "Network",
+    "role": "Network Technician",
+    "status": "Todo",
+    "priority": "Medium",
+    "dueDate": "2024-03-10"
+  },
+  {
+    "id": 1003,
+    "title": "Implement login screen UI",
+    "projectId": 103,
+    "department": "IT",
+    "role": "Frontend Developer",
+    "status": "Done",
+    "priority": "Medium",
+    "dueDate": "2024-01-25"
+  },
+  {
+    "id": 1004,
+    "title": "Create API for user profile",
+    "projectId": 103,
+    "department": "IT",
+    "role": "Backend Developer",
+    "status": "In Progress",
+    "priority": "High",
+    "dueDate": "2024-02-28"
+  },
+  {
+    "id": 1005,
+    "title": "Prepare HR system requirements",
+    "projectId": 104,
+    "department": "HR",
+    "role": "HR Specialist",
+    "status": "Done",
+    "priority": "Low",
+    "dueDate": "2024-01-30"
+  },
+  {
+    "id": 1006,
+    "title": "Employee onboarding flow review",
+    "projectId": 110,
+    "department": "HR",
+    "role": "HR Manager",
+    "status": "In Progress",
+    "priority": "Medium",
+    "dueDate": "2024-03-05"
+  },
+  {
+    "id": 1007,
+    "title": "Handle customer complaint ticket",
+    "projectId": 106,
+    "department": "Customer Support",
+    "role": "Support Agent",
+    "status": "Todo",
+    "priority": "High",
+    "dueDate": "2024-02-15"
+  },
+  {
+    "id": 1008,
+    "title": "Analyze chatbot responses",
+    "projectId": 106,
+    "department": "Customer Support",
+    "role": "Customer Success Specialist",
+    "status": "In Progress",
+    "priority": "Medium",
+    "dueDate": "2024-03-01"
+  },
+  {
+    "id": 1009,
+    "title": "Prepare sales performance report",
+    "projectId": 107,
+    "department": "Sales",
+    "role": "Sales Executive",
+    "status": "Done",
+    "priority": "Low",
+    "dueDate": "2024-01-18"
+  },
+  {
+    "id": 1010,
+    "title": "Update CRM lead status",
+    "projectId": 113,
+    "department": "Sales",
+    "role": "Sales Manager",
+    "status": "In Progress",
+    "priority": "Medium",
+    "dueDate": "2024-02-22"
+  },
+  {
+    "id": 1011,
+    "title": "Launch social media campaign",
+    "projectId": 108,
+    "department": "Marketing",
+    "role": "Marketing Specialist",
+    "status": "Todo",
+    "priority": "Medium",
+    "dueDate": "2024-03-12"
+  },
+  {
+    "id": 1012,
+    "title": "Analyze campaign engagement",
+    "projectId": 114,
+    "department": "Marketing",
+    "role": "Digital Marketer",
+    "status": "In Progress",
+    "priority": "Low",
+    "dueDate": "2024-03-20"
+  },
+  {
+    "id": 1013,
+    "title": "Monitor data center uptime",
+    "projectId": 109,
+    "department": "Network",
+    "role": "Network Engineer",
+    "status": "Done",
+    "priority": "High",
+    "dueDate": "2024-01-12"
+  },
+  {
+    "id": 1014,
+    "title": "Security vulnerability scan",
+    "projectId": 112,
+    "department": "Network",
+    "role": "Security Engineer",
+    "status": "In Progress",
+    "priority": "High",
+    "dueDate": "2024-02-25"
+  },
+  {
+    "id": 1015,
+    "title": "Optimize database queries",
+    "projectId": 105,
+    "department": "IT",
+    "role": "Backend Developer",
+    "status": "Todo",
+    "priority": "High",
+    "dueDate": "2024-03-08"
+  },
+  {
+    "id": 1016,
+    "title": "UI performance improvements",
+    "projectId": 111,
+    "department": "IT",
+    "role": "Frontend Developer",
+    "status": "In Progress",
+    "priority": "Medium",
+    "dueDate": "2024-02-27"
+  },
+  {
+    "id": 1017,
+    "title": "Customer satisfaction survey",
+    "projectId": 115,
+    "department": "Customer Support",
+    "role": "Support Supervisor",
+    "status": "Done",
+    "priority": "Low",
+    "dueDate": "2024-01-22"
+  },
+  {
+    "id": 1018,
+    "title": "Sales forecast analysis",
+    "projectId": 107,
+    "department": "Sales",
+    "role": "Business Analyst",
+    "status": "In Progress",
+    "priority": "Medium",
+    "dueDate": "2024-03-02"
+  },
+  {
+    "id": 1019,
+    "title": "Marketing content calendar",
+    "projectId": 114,
+    "department": "Marketing",
+    "role": "Content Strategist",
+    "status": "Todo",
+    "priority": "Low",
+    "dueDate": "2024-03-15"
+  },
+  {
+    "id": 1020,
+    "title": "HR monthly performance review",
+    "projectId": 110,
+    "department": "HR",
+    "role": "HR Manager",
+    "status": "In Progress",
+    "priority": "Medium",
+    "dueDate": "2024-03-18"
+  },
+   {
+    "id": 1020,
+    "title": "HR monthly performance review",
+    "projectId": 110,
+    "department": "HR",
+    "role": "HR Manager",
+    "status": "Todo",
+    "priority": "Medium",
+    "dueDate": "2024-05-18"
+  }
+]
+}
